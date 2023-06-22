@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:googgame_ez/Homescreen/home_screen.dart';
 import 'package:googgame_ez/screens/Discover/discover_screen.dart';
+import 'package:googgame_ez/screens/GoogleMap/google_map.dart';
 import 'package:googgame_ez/screens/TabBar/tab_bar.dart';
 import 'package:googgame_ez/screens/Tournament/tournament_screen.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
@@ -17,9 +18,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
       PersistentTabController(initialIndex: 0);
 
   List<Widget> _buildScreens() {
-    return const [
+    return [
       HomeScreen(),
-      HomeScreen(),
+      GoogleMapScreen(),
       DiscoverScreen(),
       TabBarScreen(),
       TournamentScreen(),
@@ -42,6 +43,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
         ),
       ),
       PersistentBottomNavBarItem(
+        onPressed: (p0) {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const GoogleMapScreen()));
+        },
         icon: Image.asset(
           'assets/Location_bold.png',
           height: 24,

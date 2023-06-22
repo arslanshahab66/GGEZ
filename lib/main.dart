@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:googgame_ez/screens/Cash/cash_screen.dart';
+import 'package:googgame_ez/screens/GoogleMap/google_map.dart';
 import 'package:googgame_ez/screens/Splash/splash.dart';
-import 'package:googgame_ez/screens/TeamRegisteration/payment_success.dart';
 
 void main() {
   runApp(const MyApp());

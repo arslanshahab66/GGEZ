@@ -59,7 +59,7 @@ class _PaymentSuccessfulScreenState extends State<PaymentSuccessfulScreen> {
                       const TextSpan(
                         text: "You've ",
                         style: TextStyle(
-                            height: 1.5,
+                            height: 1.3,
                             fontFamily: 'SF-Pro',
                             fontSize: 15,
                             color: Color(0xff8296F5)),
@@ -67,7 +67,7 @@ class _PaymentSuccessfulScreenState extends State<PaymentSuccessfulScreen> {
                       TextSpan(
                         text: 'successfully ',
                         style: TextStyle(
-                          height: 1.5,
+                          height: 1.3,
                           fontFamily: 'SF-Pro',
                           fontSize: 15,
                           fontWeight: FontWeight.normal,
@@ -80,7 +80,7 @@ class _PaymentSuccessfulScreenState extends State<PaymentSuccessfulScreen> {
                       const TextSpan(
                         text: 'registered for the ',
                         style: TextStyle(
-                            height: 1.5,
+                            height: 1.3,
                             fontFamily: 'SF-Pro',
                             fontSize: 15,
                             color: Color(0xff8296F5)),
